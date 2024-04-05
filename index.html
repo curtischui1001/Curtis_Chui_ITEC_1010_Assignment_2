@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Curtis Chui ITEC 1620 Assignment 2
+  </title>
+  <style>
+       a 
+       {
+        text-decoration: none;
+       }
+        .screen 
+        {
+            display: none;
+        }
+        .active 
+        {
+            display: block; 
+        }
+        body
+        {
+          background-image: url("https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1712188800&semt=ais");
+          background-size:cover;
+          opacity: 0.9;
+        }
+        .bio-background 
+        {
+         background-color: rgba(255, 255, 255, 0.7);
+        }
+        .projects-background 
+        {
+         display: flex;
+        }
+        .project
+        {
+         margin: 0 10px;
+         text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+  <h3 align="center">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <tr>
+<td align="center">
+   <a><font color="black" size="7"><img src= "cat.gif" alt="GIF Image" width="70"></font></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a><font color="black" size="4"></font></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  
+  
+    <a href="#" onclick="showScreen('home')"><font color="black" size="4">HOME</font></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="showScreen('bio')"><font color="black" size="4">ABOUT ME</font></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="showScreen('projects')"><font color="black" size="4">PROJECTS</font>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.yorku.ca/"><font color="black" size="4">SCHOOL</font></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="mailto:curtis08@my.yorku.ca"><font color="black" size="4">CONTACT ME</font></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  <a><font color="black" size="4"></font></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  <a><font color="black" size="4">CURTIS CHUI</font></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+</td>
+</tr>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<div id="home" class="screen active">
+  <h1 align="center">
+    <font face="Lato" color="black" size="7">
+      WELCOME TO CURTIS CHUI'S PROFILE
+    </font>
+  </h1>
+  <h3 align="center">
+    <font face="Lato" color="black" size="5">
+      ITEC 1620 Assignment 2
+    </font>
+  </h3>
+</div>
+
+<div id="bio" class="screen" style="overflow: auto; height: 100vh;">
+    <h1 align="center">
+      <div class="bio-background" style="padding: 20px; border-radius: 10px;">
+        <font face="Lato" color="#212F3D" size="5">
+          Hello! I am Curtis Chui, a first year student from Hong Kong studying Information Technology at York University.<br> My passion for programming started when I first played computer games at 12 years old, and I hope to create one as well in the future.<br>
+          <br>
+          <br>
+          <br>
+          <b>My city:</b> Hong Kong
+          <br>
+          <img src="hongkong.jpg" alt="Hong Kong" style="max-width: 60%; height: auto;">
+          <br>
+          <br>
+          <br>
+          <b>My favourite food:</b> Sushi
+          <br>
+          <img src="sushi.jpg" alt="Sushi" style="max-width: 100%; height: auto;">
+          <br>
+          <br>
+          <br>
+          <b>My favourite color:</b> Yellow
+          <br>
+          <img src="yellow.jpg" alt="Yellow" style="max-width: 100%; height: auto;">
+          <br>
+          <br>
+          <br>
+          <b>My favourite country:</b> Japan
+          <br>
+          <img src="japan.jpg" alt="Japan" style="max-width: 60%; height: auto;">
+        </font>
+      </div>
+    </h1>
+  </div>
+
+<div id="projects" class="screen">
+  <h1 align="center">
+    <div class="projects-background">
+      <div class="project">
+        <img src="shooting.jpg" alt="Shooting Game" style="max-width: 70%; height: auto;">
+        <p align="center">Shooting Game</p>
+      </div>
+      <div class="project">
+        <img src="pathfinder.jpg" alt="Path Finding Game" style="max-width: 60%; height: auto;">
+        <p align="center">Path Finding Game</p>
+      </div>
+      <div class="project">
+        <img src="characterdesign.jpg" alt="Zombie Game">
+        <p align="center">Zombie Game</p>
+      </div>
+    </div>
+  </h1>
+</div>
+
+<script>
+   function showScreen(screenId) 
+   {
+        var sections = document.getElementsByClassName('screen');
+        for (var i = 0; i < sections.length; i++) 
+        {
+            sections[i].classList.remove('active');
+        }
+        
+        document.getElementById(screenId).classList.add('active');
+    }
+</script>
+
+
+</body>
+</html>
